@@ -16,7 +16,7 @@ const savedTheme = localStorage.getItem(THEME_KEY);
 applyTheme(savedTheme === "day" ? "day" : "dark");
 
 // ✅ INSERISCI QUI LA TUA API KEY GROQ
-const GROQ_API_KEY = "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";
+const GROQ_API_KEY = "";
 
 function add(text, cls) {
   const div = document.createElement("div");
@@ -74,6 +74,7 @@ async function send() {
 }
 
 sendBtn.addEventListener("click", send);
+
 
 input.addEventListener("keydown", e => {
   if (e.key === "Enter" && !e.shiftKey) {
